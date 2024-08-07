@@ -1,0 +1,55 @@
+.csv-uploader {
+    margin: 20px;
+    font-family: Arial, sans-serif;
+    width: 300px; 
+  }
+  
+  .csv-uploader input[type="file"] {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .csv-uploader button {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .header-selector {
+    margin-top: 20px;
+  }
+  
+  .header-selector h3 {
+    margin-bottom: 10px;
+  }
+  
+  .header-list {
+    border: 1px solid #ccc;
+    padding: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+    width: 10%;
+    /* box-sizing: border-box; Adicione esta linha para incluir o preenchimento na largura */
+  }
+  
+  .filter-input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+  
+  .header-scroll {
+    overflow-y: auto;
+  }
+  
+  .header-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-item input {
+    margin-right: 5px;
+  }
+  

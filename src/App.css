@@ -1,0 +1,371 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.csv-uploader {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+  max-width: 400px; /* Limita a largura máxima do uploader */
+}
+
+.csv-uploader input[type="file"] {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%; 
+  max-width: 100%;
+  box-sizing: border-box; 
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; 
+}
+
+.csv-uploader button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  width: 100%; 
+  max-width: 100%; 
+  box-sizing: border-box;
+}
+
+.csv-uploader button:hover {
+  background-color: #0056b3;
+}
+
+.header-selector {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.header-selector h3 {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.header-list {
+  border: 1px solid #ddd;
+  padding: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+}
+
+.header-item {
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.header-item input {
+  margin-right: 10px;
+}
+
+.filter-input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.data-grid-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.table-wrapper {
+  max-width: 1200px;
+  overflow-x: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.data-grid-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.data-grid-table th,
+.data-grid-table td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+.data-grid-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.data-grid-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.data-grid-table tr:hover {
+  background-color: #ddd;
+}
+
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.pagination-controls button {
+  padding: 5px 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.pagination-controls button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.pagination-controls span {
+  font-size: 16px;
+}
+
+.chart-container {
+  margin-top: 20px;
+  width: 90%;
+  max-width: 800px; 
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow-x: auto; 
+}
+
+.chart-container canvas {
+  max-width: 100%;
+  height: auto; 
+}
+
+.csv-uploader {
+  margin: 20px;
+  font-family: Arial, sans-serif;
+  width: 100%;
+}
+
+.csv-uploader input[type="file"] {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.csv-uploader button {
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.header-selector {
+  margin-top: 20px;
+}
+
+.header-selector h3 {
+  margin-bottom: 10px;
+}
+
+.header-list {
+  border: 1px solid #ccc;
+  padding: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+  width: 100%;
+  box-sizing: border-box; 
+}
+
+.filter-input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.header-scroll {
+  overflow-y: auto;
+}
+
+.header-item {
+  display: flex;
+  align-items: center;
+}
+
+.header-item input {
+  margin-right: 5px;
+}
+
+.data-grid-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  width: 100%; 
+}
+
+.table-wrapper {
+  max-width: 1200px;
+  overflow-x: auto; 
+}
+
+.data-grid-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.data-grid-table th, .data-grid-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.data-grid-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.data-grid-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.data-grid-table tr:hover {
+  background-color: #ddd;
+}
+
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.pagination-controls button {
+  padding: 5px 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.pagination-controls button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.pagination-controls span {
+  font-size: 16px;
+}
+
+.filter-selector {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.filter-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.filter-item label {
+  margin-right: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.filter-item select,
+.filter-item input {
+  margin-right: 10px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 200px;
+  box-sizing: border-box;
+}
+
+.filter-item select:hover,
+.filter-item input:hover {
+  border-color: #007bff;
+}
+
+.chart-selector {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.chart-selector h3 {
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+.chart-selector select {
+  margin-right: 10px;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 200px;
+  box-sizing: border-box;
+}
+
+.chart-selector button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.chart-selector button:hover {
+  background-color: #0056b3;
+}
